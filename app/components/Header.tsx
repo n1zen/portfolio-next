@@ -10,6 +10,9 @@ export default function Header() {
             {/* Navigation */}
             <NavBar/>
             {/* Other Actions */}
+            <div className="p-0 m-0 flex justify-center items-center">
+                <h1 className="font-bold text-xl">Other Actions</h1>
+            </div>
         </header>
     );
 }
