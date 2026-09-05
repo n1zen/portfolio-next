@@ -1,8 +1,9 @@
 import NavBar from "./NavBar";
+import ActionBar from "./ActionBar";
 
 export default function Header() {
     return(
-        <header className="border rounded-lg py-2 px-6 my-2 mx-auto flex justify-center items-center"> 
+        <header className="border border-slate-400 rounded-lg py-2 px-6 my-2 mx-auto flex justify-center items-center"> 
             {/* Title */}
             <div className="p-0 m-0 flex justify-center items-center">
                 <h1 className="font-bold text-xl">n1zen.dev</h1>
@@ -10,6 +11,7 @@ export default function Header() {
             {/* Navigation */}
             <NavBar/>
             {/* Other Actions */}
+            <ActionBar />
         </header>
     );
 }
