@@ -6,7 +6,7 @@ export default function NavBar() {
     ];
 
     return(
-        <div className="flex justify-center items-center space-x-5 p-0 m-0">
+        <div className="flex justify-center items-center space-x-10 p-0 m-0">
             {Routes.map((routeProp) => (
                 <NavItem key={routeProp.routeId} name={routeProp.name} url={routeProp.url}/>
             ))}
@@ -16,7 +16,7 @@ export default function NavBar() {
 
 function NavItem({name, url}: RouteProp) {
     return(
-        <a className="font-semibold text-xl" href={url}>
+        <a className="font-subheading text-xl" href={url}>
             {name}
         </a>
     )
