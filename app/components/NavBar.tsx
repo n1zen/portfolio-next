@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 interface NavLinkProps {
-    isActive: boolean;
     href: string;
     children: React.ReactNode;
 }
