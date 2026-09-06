@@ -27,7 +27,7 @@ export default function NavBar() {
     ];
 
     return(
-        <div className="flex justify-center items-center space-x-10 p-0 m-0">
+        <div className="flex justify-center items-center space-x-10 p-0 m-auto">
             {Routes.map((routeProp) => (
                 <NavLink key={routeProp.routeId} href={routeProp.url}>
                     {routeProp.name}
