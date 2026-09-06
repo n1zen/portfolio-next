@@ -5,7 +5,9 @@ import Link from "next/link";
 interface NavLinkProps {
     href: string;
     children: React.ReactNode; 
-} interface route { 
+} 
+
+interface route { 
     routeId: number; 
     name: string; 
     url: string; 
