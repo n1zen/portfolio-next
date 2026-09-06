@@ -8,7 +8,7 @@ export default function ActionBar() {
 		<IoLogoGithub fontSize={"1.25em"}/>
 	    </a>
 	    <a href="https://www.linkedin.com/in/louie-izen-torres-4557243ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="bg-slate-300 p-1.5 rounded">
-		<IoLogoLinkedIn fontSize={"1.25em"}/>
+		<IoLogoLinkedin fontSize={"1.25em"}/>
 	    </a>
         </div>
     );
