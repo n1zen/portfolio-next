@@ -1,17 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { PT_Serif, Josefin_Sans, Junge } from "next/font/google";
 import "./globals.css";
 
 import Header from "../app/components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ptSerif = PT_Serif({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const josefinSans = Josefin_Sans({
+  weight: ["300", "400", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-subheading",
+  display: "swap",
+});
+
+const junge = Junge({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-paragraph",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${ptSerif.variable} ${josefinSans.variable} ${junge.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />
