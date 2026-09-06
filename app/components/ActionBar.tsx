@@ -3,7 +3,7 @@ import { IoLogoLinkedin } from "react-icons/io";
 
 export default function ActionBar() {
     return(
-        <div className="flex space-x-2 mx-4">
+        <div className="flex space-x-2 ml-4">
 	    <a href="https://github.com/n1zen" className="bg-slate-300 p-1.5 rounded">
 		<IoLogoGithub fontSize={"1.25em"}/>
 	    </a>
