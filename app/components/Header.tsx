@@ -7,7 +7,7 @@ export default function Header() {
             {/* Title */}
             <h1 className="font-bold text-xl font-heading">n1zen.dev</h1>
 	    {/* Navigation and Other Actions */}
-	    <div className="m-0 p-0 flex justify-between">
+	    <div className="m-0 p-0 flex">
 		<NavBar />
 		<ActionBar />
 	    </div>
