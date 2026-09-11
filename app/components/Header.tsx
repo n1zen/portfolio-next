@@ -24,7 +24,7 @@ export default function Header() {
 			</div>
 		</Card>
 		{/* Mobile Navigation Menu */}
-		<div className="mb-8">
+		<div className="mb-8 flex justify-center mx-8">
 			<MobileNavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
 		</div>
 		</>
