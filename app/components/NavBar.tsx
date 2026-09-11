@@ -11,7 +11,7 @@ function MenuButton({isMenuOpen, setIsMenuOpen}: MenuProps) {
             <button className="p-1.5"
             onClick={() => {setIsMenuOpen(!isMenuOpen)}}
             >
-                {isMenuOpen ? <IoMdClose fontSize={"1.5em"}/> : <IoMdMenu fontSize={"1.25em"}/>}
+                {isMenuOpen ? <IoMdClose fontSize={"1.25em"}/> : <IoMdMenu fontSize={"1.25em"}/>}
             </button>
         </div>
     );
