@@ -1,40 +1,33 @@
 "use client";
 
-import Link from "next/link";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
-interface NavLinkProps {
-    href: string;
-    children: React.ReactNode; 
-} 
+import NavLink from "./NavLink";
+import { MenuProps, Routes } from "../utils/types";
 
-interface route { 
-    routeId: number; 
-    name: string; 
-    url: string; 
-} 
-function NavLink({href, children}: NavLinkProps) { 
-    return( 
-        <Link href={href} className="relative text-gray-700 hover:text-black font-subheading group transition-colors duration-200">
-            {children}
-            <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 origin-center -translate-x-1/2 group-hover:w-full"/>
-        </Link>
+function MenuButton({isMenuOpen, setIsMenuOpen}: MenuProps) {
+    return(
+        <div className="flex space-x-2 ml-4 lg:hidden">
+            <button className="p-1.5"
+            onClick={() => {setIsMenuOpen(!isMenuOpen)}}
+            >
+                {isMenuOpen ? <IoMdClose fontSize={"1.5em"}/> : <IoMdMenu fontSize={"1.5em"}/>}
+            </button>
+        </div>
     );
 }
 
-export default function NavBar() {
-    const Routes: route[] = [
-        { routeId: 1, name: "Home", url: "/" },
-        { routeId: 2, name: "About", url: "/about" },
-        { routeId: 3, name: "Projects", url: "/projects" }
-    ];
-
+export default function NavBar({isMenuOpen, setIsMenuOpen}: MenuProps) {
     return(
-        <div className="flex justify-center items-center space-x-10 px-0 pb-0 pt-1 mx-4 hidden md:block">
+        <>
+        <div className="justify-center items-center space-x-10 px-0 pb-0 pt-1 mx-4 hidden lg:flex">
             {Routes.map((routeProp) => (
                 <NavLink key={routeProp.routeId} href={routeProp.url}>
                     {routeProp.name}
                 </NavLink>
             ))}
         </div>
+        <MenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+        </>
     );
 }
