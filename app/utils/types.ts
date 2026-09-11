@@ -1,6 +1,3 @@
-import { IconType } from "react-icons";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
-
 export interface NavLinkProps {
     href: string;
     children: React.ReactNode; 
@@ -31,6 +28,7 @@ export const Socials: SocialLinks[] = [
     { name: "github", link: "https://github.com/n1zen" },
     { name: "linkedin", link: "https://www.linkedin.com/in/louie-izen-torres-4557243ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" }
 ];
+
 export const Routes: route[] = [
         { routeId: 1, name: "Home", url: "/" },
         { routeId: 2, name: "About", url: "/about" },
