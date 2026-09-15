@@ -8,7 +8,7 @@ import SocialLinkButton from "./SocialLinkButton";
 export default function MobileNavBar({isMenuOpen, setIsMenuOpen}: MenuProps) {
     return(
         <>
-        <Card className={`absolute right-8 top-full mt-2 flex flex-col justify-center items-center
+        <Card className={`absolute top-full mt-2 flex flex-col justify-center items-center
         transition-all duration-300 origin-top px-4 py-2 w-full gap-2.5
         ${isMenuOpen
             ? "opacity-100 scale-y-100"
