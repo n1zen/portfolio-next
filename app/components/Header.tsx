@@ -22,11 +22,9 @@ export default function Header() {
 				<NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
 				<ActionBar />
 			</div>
+			{/* Mobile Navigation */}
+			<MobileNavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 		</Card>
-		{/* Mobile Navigation Menu */}
-		<div className="mb-8">
-			<MobileNavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
-		</div>
 		</>
     );
 }
