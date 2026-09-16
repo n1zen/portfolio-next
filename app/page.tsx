@@ -8,8 +8,8 @@ export default function Home() {
       <Card className="p-2 flex flex-row gap-8">
 	<ProfilePicture /> 
         <div className="flex flex-col justify-center items-start my-auto">
-	    <h5>About Me</h5>
-	    <p>Lorem ipsum dolor</p>
+	    <h5 className="font-bold text-xl font-heading">About Me</h5>
+	    <p className="text-md">Lorem ipsum dolor</p>
 	</div>
       </Card>
       <div>
