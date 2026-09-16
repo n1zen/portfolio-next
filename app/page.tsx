@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="mt-2 flex flex-col gap-2">
       {/* About me */}
-      <Card className="py-2 px-4 flex flex-row gap-8">
+      <Card className="py-2 px-4 flex md:flex-row flex-col gap-8 justify-center items-center">
 	<ProfilePicture /> 
         <div className="flex flex-col justify-center items-start my-auto">
 	    <h5 className="font-bold text-xl font-heading">About Me</h5>
