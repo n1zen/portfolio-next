@@ -5,9 +5,12 @@ export default function Home() {
   return (
     <div>
       {/* About me */}
-      <Card>
-	<ProfilePicture />
-        About me
+      <Card className="p-8 flex flex-row gap-8">
+	<ProfilePicture /> 
+        <div>
+	    <h5>About Me</h5>
+	    <p>Lorem ipsum dolor</p>
+	</div>
       </Card>
       <div>
         {/* Projects */}
