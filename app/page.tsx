@@ -7,7 +7,7 @@ export default function Home() {
       {/* About me */}
       <Card className="p-2 flex flex-row gap-8">
 	<ProfilePicture /> 
-        <div className="flex flex-col justify-start items-center my-auto">
+        <div className="flex flex-col justify-center items-start my-auto">
 	    <h5>About Me</h5>
 	    <p>Lorem ipsum dolor</p>
 	</div>
