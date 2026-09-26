@@ -16,7 +16,7 @@ const stackStyles: Record<number, string> = {
 const cardColors: Record<number, string> = {
     0: "bg-gray-950",
     1: "bg-gray-400",
-    2: "bg-gray-50",
+    2: "bg-gray-100",
 };
 
 export default function Projects() {
@@ -34,7 +34,7 @@ export default function Projects() {
     return(
 	<Card className="w-full flex flex-col p-4 gap-3">
 	    <Title>My Projects</Title>
-	    <div className="relative w-[90%] h-40 pb-10">
+	    <div className="relative w-[90%] h-40 mb-20">
 	    {visible
 		.slice()
 		.reverse()
