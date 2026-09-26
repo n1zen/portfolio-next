@@ -10,7 +10,7 @@ const VISIBLE_CARD_COUNT = 3;
 const stackStyles: Record<number, string> = {
     0: "translate-x-0 translate-y-0 scale-100 z-30",
     1: "translate-x-4 translate-y-3 scale-95 z-20, opacity-90",
-    2: "translate-x-6 translate-y-6 scale-90 z-10, opacity-75",
+    2: "translate-x-8 translate-y-6 scale-90 z-10, opacity-75",
 };
 
 const cardColors: Record<number, string> = {
