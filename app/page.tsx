@@ -14,12 +14,12 @@ export default function Home() {
 	    </p>
 	</div>
       </Card>
-      <div>
+      <div className="flex md:flex-row flex-col gap-8 justify-center items-center">
         {/* Projects */}
         <Card>
           Projects
         </Card>
-        <div>
+        <div className="flex flex-col gap-8 justify-center items-center">
           {/* Skills */}
           <Card>Skills</Card>
           {/* Resume */}
