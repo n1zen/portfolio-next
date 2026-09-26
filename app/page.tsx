@@ -18,9 +18,7 @@ export default function Home() {
       </Card>
       <div className="flex md:flex-row flex-col gap-2 justify-center items-center w-full">
         {/* Projects */}
-        <Card className="w-full">
-	    <Projects />
-        </Card>
+        <Projects />
         <div className="flex flex-col gap-4 justify-center items-center w-full">
           {/* Skills */}
           <Card className="w-full">
