@@ -32,8 +32,9 @@ export default function Projects() {
     };
 
     return(
-	<Card className="w-full flex flex-col p-4">
+	<Card className="w-full flex flex-col p-4 gap-3">
 	    <Title>My Projects</Title>
+	    <div className="relative w-full h-40"
 	    {visible
 		.slice()
 		.reverse()
@@ -45,6 +46,7 @@ export default function Projects() {
 			onSwipeUp={stackPosition === 0 ? handleSwipeUp : undefined}
 		    />
 		))}
+	    </div>
 	</Card>
     );
 }
@@ -76,7 +78,7 @@ function ProjectCard({
 	<div
 	    onTouchStart={handleTouchStart}
 	    onTouchEnd={handleTouchEnd}
-	    className={`inset-0 rounded-2xl border border-black shadow-md flex items-center justify-center text-xl font-semibold transition-all duration-300 ease-out ${stackStyles[stackPosition]} ${cardColors[stackPosition]}`}
+	    className={`absolute inset-0 rounded-2xl border border-black shadow-md flex items-center justify-center text-xl font-semibold transition-all duration-300 ease-out ${stackStyles[stackPosition]} ${cardColors[stackPosition]}`}
 	>
 	    {project.title}
 	</div>
