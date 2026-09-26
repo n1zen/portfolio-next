@@ -34,7 +34,7 @@ export default function Projects() {
     return(
 	<Card className="w-full flex flex-col p-4 gap-3">
 	    <Title>My Projects</Title>
-	    <div className="relative w-full h-40 mb-4">
+	    <div className="relative w-full h-40 mb-4 mr-4">
 	    {visible
 		.slice()
 		.reverse()
