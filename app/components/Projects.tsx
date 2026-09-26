@@ -18,7 +18,7 @@ const cardColors: Record<number, string> = {
 };
 
 export default function Projects() {
-    const [currentIndex, setCurrentIndex] useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const visible = Array.from({ length: VISIBLE_CARD_COUNT }, (_, offset) => {
 	const itemIndex = (currentIndex + offset) % ProjectList.length;
