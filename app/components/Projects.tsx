@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Card from "./Card";
 import Title from "./Title";
 import { ProjectList } from "../utils/data";
@@ -37,7 +37,7 @@ export default function Projects() {
 	    {visible
 		.slice()
 		.reverse()
-		.map(({ item, stackPosition }) => (
+		.map(({ project, stackPosition }) => (
 		    <ProjectCard
 			key={project.id}
 			project={project}
