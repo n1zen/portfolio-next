@@ -20,7 +20,7 @@ export default function Home() {
         <Card className="w-full">
 	    <Title>Projects</Title>
         </Card>
-        <div className="flex flex-col gap-8 justify-center items-center">
+        <div className="flex flex-col gap-8 justify-center items-center w-full">
           {/* Skills */}
           <Card className="w-full">
 	    <Title>Skills</Title>
