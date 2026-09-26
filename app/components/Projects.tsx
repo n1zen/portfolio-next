@@ -32,7 +32,7 @@ export default function Projects() {
     };
 
     return(
-	<Card className="w-full flex flex-col py-4 pl-4 pr-80 gap-3">
+	<Card className="w-full flex flex-col py-4 pl-4 pr-8 gap-3">
 	    <Title>My Projects</Title>
 	    <div className="relative w-full h-40 mb-4">
 	    {visible
