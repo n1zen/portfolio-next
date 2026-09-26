@@ -15,12 +15,12 @@ export default function Home() {
 	    </p>
 	</div>
       </Card>
-      <div className="flex md:flex-row flex-col gap-8 justify-center items-center w-full">
+      <div className="flex md:flex-row flex-col gap-2 justify-center items-center w-full">
         {/* Projects */}
         <Card className="w-full">
 	    <Title>Projects</Title>
         </Card>
-        <div className="flex flex-col gap-8 justify-center items-center w-full">
+        <div className="flex flex-col gap-4 justify-center items-center w-full">
           {/* Skills */}
           <Card className="w-full">
 	    <Title>Skills</Title>
