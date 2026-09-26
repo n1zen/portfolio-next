@@ -1,6 +1,7 @@
 import Card from "./components/Card";
 import ProfilePicture from "./components/ProfilePicture";
 import Title from "./components/Title";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <div className="flex md:flex-row flex-col gap-2 justify-center items-center w-full">
         {/* Projects */}
         <Card className="w-full">
-	    <Title>Projects</Title>
+	    <Projects />
         </Card>
         <div className="flex flex-col gap-4 justify-center items-center w-full">
           {/* Skills */}
