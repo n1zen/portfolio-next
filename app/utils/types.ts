@@ -24,6 +24,11 @@ export interface SocialLinks {
     link: string;
 }
 
+export interface TitleProps {
+    children: React.ReactNode;
+    className?: string;
+}
+
 export const Socials: SocialLinks[] = [
     { name: "github", link: "https://github.com/n1zen" },
     { name: "linkedin", link: "https://www.linkedin.com/in/louie-izen-torres-4557243ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" }
