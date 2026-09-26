@@ -75,12 +75,13 @@ function ProjectCard({
     };
 
     return(
-	<div
+	<a
 	    onTouchStart={handleTouchStart}
 	    onTouchEnd={handleTouchEnd}
 	    className={`absolute inset-0 rounded-2xl border border-black shadow-md flex items-center justify-center text-xl font-semibold transition-all duration-300 ease-out ${stackStyles[stackPosition]} ${cardColors[stackPosition]}`}
+	    href={project.link}
 	>
 	    <h6 className="text-white">{project.title}</h6>
-	</div>
+	</a>
     );
 }
