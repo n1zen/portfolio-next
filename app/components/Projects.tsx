@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Card from "./Card";
 import Title from "./Title";
-import { ProjectList } from "./utils/data";
+import { ProjectList } from "../utils/data";
 
 const VISIBLE_CARD_COUNT = 3;
 
